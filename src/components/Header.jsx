@@ -37,8 +37,8 @@ function Header() {
           </div>
 
           {/* Icons */}
-          <FiShoppingCart className="cursor-pointer" size={20} />
-          <FiUser className="cursor-pointer" size={20} />
+          <FiShoppingCart className="cursor-pointer" size={25} />
+          <FiUser className="cursor-pointer" size={25} />
         </div>
 
       </div>

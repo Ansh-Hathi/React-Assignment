@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="w-screen bg-gray-100 pt-40 relative mt-30">
 
-      {/* NEWSLETTER BAR (UNCHANGED & PERFECT) */}
+      {/* NEWSLETTER BAR*/}
       <div className="absolute top-0 left-0 w-full -translate-y-1/2 z-10 px-12">
         <div className="bg-black rounded-2xl px-12 py-12 flex items-center justify-between max-w-[1280px] mx-auto">
           <h2 className="text-white text-3xl font-extrabold leading-tight max-w-md">
@@ -106,11 +106,11 @@ function Footer() {
         <div className="max-w-[1280px] mx-auto px-12 py-6 flex items-center justify-between text-sm text-gray-500">
           <span>Shop.co © 2000–2023, All Rights Reserved</span>
 
-          <div className="flex gap-3">
+          <div className="flex gap-16">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" className="h-5" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_Pay_logo.svg" className="h-5" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" className="h-5" />
           </div>
         </div>
