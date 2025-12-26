@@ -1,27 +1,32 @@
-import { FaStar, FaCheckCircle, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import {
+  FaStar,
+  FaCheckCircle,
+  FaArrowLeft,
+  FaArrowRight,
+} from "react-icons/fa";
 
 function HappyCustomers() {
   return (
-    <section className="w-screen px-12 py-20">
+    <section className="w-full px-4 sm:px-8 lg:px-12 py-12 sm:py-16 lg:py-20">
 
       {/* HEADER ROW */}
-      <div className="flex items-center justify-between mb-12">
-        <h2 className="text-4xl font-extrabold">
+      <div className="flex items-center justify-between mb-8 sm:mb-12">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">
           OUR HAPPY CUSTOMERS
         </h2>
 
         {/* ARROWS */}
-        <div className="flex gap-4 text-xl cursor-pointer">
+        <div className="flex gap-3 sm:gap-4 text-lg sm:text-xl cursor-pointer">
           <FaArrowLeft />
           <FaArrowRight />
         </div>
       </div>
 
       {/* TESTIMONIALS */}
-      <div className="flex gap-6 overflow-hidden">
+      <div className="flex gap-6 overflow-x-auto sm:overflow-hidden scroll-smooth">
 
         {/* CARD 1 */}
-        <div className="w-1/3 border rounded-2xl p-6">
+        <div className="min-w-[280px] sm:w-1/2 lg:w-1/3 border rounded-2xl p-5 sm:p-6">
           {/* STARS */}
           <div className="flex gap-1 text-yellow-500 mb-4">
             <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
@@ -29,7 +34,7 @@ function HappyCustomers() {
 
           {/* NAME */}
           <div className="flex items-center gap-2 mb-3">
-            <h3 className="font-bold">Sarah M.</h3>
+            <h3 className="font-bold text-sm sm:text-base">Sarah M.</h3>
             <FaCheckCircle className="text-green-500 text-sm" />
           </div>
 
@@ -42,13 +47,13 @@ function HappyCustomers() {
         </div>
 
         {/* CARD 2 */}
-        <div className="w-1/3 border rounded-2xl p-6">
+        <div className="min-w-[280px] sm:w-1/2 lg:w-1/3 border rounded-2xl p-5 sm:p-6">
           <div className="flex gap-1 text-yellow-500 mb-4">
             <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
           </div>
 
           <div className="flex items-center gap-2 mb-3">
-            <h3 className="font-bold">Alex K.</h3>
+            <h3 className="font-bold text-sm sm:text-base">Alex K.</h3>
             <FaCheckCircle className="text-green-500 text-sm" />
           </div>
 
@@ -60,13 +65,13 @@ function HappyCustomers() {
         </div>
 
         {/* CARD 3 */}
-        <div className="w-1/3 border rounded-2xl p-6">
+        <div className="min-w-[280px] sm:w-1/2 lg:w-1/3 border rounded-2xl p-5 sm:p-6">
           <div className="flex gap-1 text-yellow-500 mb-4">
             <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
           </div>
 
           <div className="flex items-center gap-2 mb-3">
-            <h3 className="font-bold">James L.</h3>
+            <h3 className="font-bold text-sm sm:text-base">James L.</h3>
             <FaCheckCircle className="text-green-500 text-sm" />
           </div>
 

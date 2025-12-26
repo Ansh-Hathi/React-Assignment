@@ -2,10 +2,10 @@ import { FaStar, FaEllipsisH, FaCheckCircle } from "react-icons/fa";
 
 function ProductReviews() {
   return (
-    <section className="w-full px-16 py-16">
+    <section className="w-full px-4 sm:px-8 lg:px-16 py-10 sm:py-16">
 
       {/* TOP TABS */}
-      <div className="flex justify-center gap-20 border-b mb-10 text-sm">
+      <div className="flex justify-center gap-6 sm:gap-12 lg:gap-20 border-b mb-8 sm:mb-10 text-xs sm:text-sm">
         <span className="pb-4 text-gray-400 cursor-pointer">
           Product Details
         </span>
@@ -18,12 +18,12 @@ function ProductReviews() {
       </div>
 
       {/* HEADER ROW */}
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-xl font-semibold">
+      <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-8">
+        <h2 className="text-lg sm:text-xl font-semibold">
           All Reviews <span className="text-gray-400 text-sm">(451)</span>
         </h2>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap gap-3">
           <button className="bg-gray-100 px-4 py-2 rounded-full text-sm">
             Latest
           </button>
@@ -34,9 +34,8 @@ function ProductReviews() {
       </div>
 
       {/* REVIEWS GRID */}
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
 
-        {/* REVIEW CARD */}
         {[
           {
             name: "Samantha D.",
@@ -77,10 +76,10 @@ function ProductReviews() {
         ].map((review, index) => (
           <div
             key={index}
-            className="border rounded-2xl p-6 relative bg-white"
+            className="border rounded-2xl p-5 sm:p-6 relative bg-white"
           >
             {/* MENU ICON */}
-            <FaEllipsisH className="absolute top-6 right-6 text-gray-400" />
+            <FaEllipsisH className="absolute top-5 right-5 text-gray-400" />
 
             {/* STARS */}
             <div className="flex text-yellow-400 mb-3">
@@ -109,7 +108,7 @@ function ProductReviews() {
       </div>
 
       {/* LOAD MORE */}
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-10 sm:mt-12">
         <button className="border px-6 py-3 rounded-full text-sm">
           Load More Reviews
         </button>

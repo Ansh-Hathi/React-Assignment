@@ -7,17 +7,18 @@ import {
 
 function Footer() {
   return (
-    <footer className="w-screen bg-gray-100 pt-40 relative mt-30">
+    <footer className="w-full bg-gray-100 pt-32 md:pt-40 relative mt-40">
 
-      {/* NEWSLETTER BAR*/}
-      <div className="absolute top-0 left-0 w-full -translate-y-1/2 z-10 px-12">
-        <div className="bg-black rounded-2xl px-12 py-12 flex items-center justify-between max-w-[1280px] mx-auto">
-          <h2 className="text-white text-3xl font-extrabold leading-tight max-w-md">
+      {/* NEWSLETTER BAR */}
+      <div className="absolute top-0 left-0 w-full -translate-y-1/2 z-10 px-4 md:px-12">
+        <div className="bg-black rounded-2xl px-6 md:px-12 py-8 md:py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 max-w-[1280px] mx-auto">
+          
+          <h2 className="text-white text-2xl md:text-3xl font-extrabold leading-tight max-w-md">
             STAY UPTO DATE ABOUT <br />
             OUR LATEST OFFERS
           </h2>
 
-          <div className="flex flex-col gap-4 w-96">
+          <div className="flex flex-col gap-4 w-full md:w-96">
             <div className="flex items-center bg-white rounded-full px-5 py-3">
               <span className="text-gray-400 mr-3">✉️</span>
               <input
@@ -30,13 +31,14 @@ function Footer() {
               Subscribe to Newsletter
             </button>
           </div>
+
         </div>
       </div>
 
-      {/* FOOTER CONTENT (SPREAD OUT LIKE IMAGE) */}
-      <div className="max-w-[1280px] mx-auto px-12 py-20">
+      {/* FOOTER CONTENT */}
+      <div className="max-w-[1280px] mx-auto px-4 md:px-12 py-20">
 
-        <div className="flex justify-between">
+        <div className="flex flex-col lg:flex-row justify-between gap-12">
 
           {/* LEFT: LOGO + DESCRIPTION */}
           <div className="max-w-sm">
@@ -46,7 +48,7 @@ function Footer() {
               From women to men.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-lg">
               <FaTwitter />
               <FaFacebookF />
               <FaInstagram />
@@ -55,8 +57,8 @@ function Footer() {
           </div>
 
           {/* RIGHT: LINKS */}
-          <div className="flex gap-24">
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16">
+            
             <div>
               <h4 className="font-semibold mb-5">COMPANY</h4>
               <ul className="space-y-3 text-sm text-gray-600">
@@ -103,16 +105,20 @@ function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="border-t">
-        <div className="max-w-[1280px] mx-auto px-12 py-6 flex items-center justify-between text-sm text-gray-500">
-          <span>Shop.co © 2000–2023, All Rights Reserved</span>
+        <div className="max-w-[1280px] mx-auto px-4 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500">
+          
+          <span className="text-center md:text-left">
+            Shop.co © 2000–2023, All Rights Reserved
+          </span>
 
-          <div className="flex gap-16">
+          <div className="flex flex-wrap justify-center gap-6">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" className="h-5" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" className="h-5" />
           </div>
+
         </div>
       </div>
 

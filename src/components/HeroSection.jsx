@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 function HeroSection() {
   return (
     <>
@@ -20,7 +23,8 @@ function HeroSection() {
     </p>
 
     <button className="mt-8 bg-black text-white px-8 py-3 rounded-full font-medium">
-      Shop Now
+      <Link to="/category">      Shop Now</Link>
+
     </button>
 
     <div className="mt-12 flex gap-12">
